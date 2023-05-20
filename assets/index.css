@@ -207,13 +207,43 @@ body > h1.title {
 .payment h1 {
    font-size: 50px;
    font-family: "Courgette", cursive;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 15px;
+}
+
+.payment h1::after {
+   content: '';
+   display: inline-block;
+   height: 100px;
+   width: 100px;
+   background: url(/assets/yape_icon.png);
+   background-size: cover;
+   border-radius: 50%;
+   background-position: center;
 }
 
 .payment .container-img {
    padding: 20px;
-   background: #fff;
-   display: inline-block;
    margin: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.payment .container-img img {
+   padding: 30px;
+   background: #fff;
+}
+
+.payment .container-img .icon {
+   position: absolute;
+   background: url(/assets/ayudaenmate.jpg);
+   background-size: cover;
+   height: auto;
+   width: 100px;
+   aspect-ratio: 864/556;
 }
 
 .payment p {
@@ -261,13 +291,18 @@ body > h1.title {
    }
 
    .container-courses .course {
-      min-height: 500px;
+      min-height: 250px;
    }
 
    .course-details .container-grid {
       grid-template-columns: 1fr;
       width: 80%;
       min-width: 50%;
+   }   
+
+   .course-details .container-grid .details img {
+      height: 50%;
+      width: auto;
    }
 }
 
@@ -286,5 +321,9 @@ body > h1.title {
    .container-courses .course:hover {
       transform: scale(1);
       box-shadow: none;
+   }
+
+   .course-details .container-grid .details img {
+      display: none;
    }
 }

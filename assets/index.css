@@ -119,7 +119,7 @@ h1.title {
 }
 
 body > h1.title {
-   height: 100px;
+   /* height: 100px; */
    padding: 0 20px;
    font-size: 100px;
    margin-top: 300px;
@@ -361,7 +361,7 @@ body > h1.title {
 @media screen and (max-width: 1210px) {
    .container-courses {
       grid-template-columns: repeat(2, 1fr);
-      margin: 200px auto;
+      margin: 50px auto;
       height: auto;
    }
 
@@ -393,12 +393,22 @@ body > h1.title {
 }
 
 
+@media screen and (max-width: 455px) {
+   body > h1.title {
+      font-size: 70px;
+   }
+}
+
 @media screen and (max-width: 660px) {
+   p.branding-desc {
+      font-size: 20px;
+   }
+
    .container-courses {
       grid-template-columns: 1fr;
       width: 90%;
       min-width: 50%;
-      margin: 200px auto;
+      margin: 0px auto;
    }
 
    .container-courses .course {

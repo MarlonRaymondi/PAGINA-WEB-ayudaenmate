@@ -98,6 +98,16 @@ body {
    border: 20px solid #4a6ea0;
 }
 
+p.branding-desc {
+   width: 90%;
+   text-align: justify;
+   margin: 0 auto;
+   margin-top: 15px;
+   color: #fff;
+   font-size: 30px;
+   max-width: 750px;
+}
+
 /* Catalog */
 
 h1.title {
@@ -125,7 +135,6 @@ body > h1.title {
    gap: 10px;
    max-width: 1250px;
    align-items: center;
-   max-height: 750px;
 }
 
 .container-courses .course {
@@ -353,7 +362,7 @@ body > h1.title {
    .container-courses {
       grid-template-columns: repeat(2, 1fr);
       margin: 200px auto;
-      min-height: 0px;
+      height: auto;
    }
 
    .container-courses .course {
@@ -399,6 +408,14 @@ body > h1.title {
    .container-courses .course:hover {
       transform: scale(1);
       box-shadow: none;
+   }
+
+   .course-details {
+      height: auto;
+   }
+
+   .course-details .container-grid .details {
+      min-height: 0;
    }
 
    .course-details .container-grid .details img {
